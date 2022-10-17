@@ -26,5 +26,5 @@ if(palabrasecreta==palabra):
 while (palabrasecreta==palabra):
     print("Contraseña correcta. Intentalo de nuevo")
     palabrasecreta=input("Dime una palabra ")
-    else
-    print("contraseña correcta"):
+else:
+    print("contraseña correcta")
