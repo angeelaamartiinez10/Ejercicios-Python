@@ -15,7 +15,7 @@ ventana.resizable(width=False,height=False)
 ventana.config(background="light blue")
 
 #genera el lienzo para pintar componentes
-frm = ttk.Frame(ventana).pack()  #paddinf->> anchura de la ventana
+frm = ttk.Frame(ventana).pack()  #padding->> anchura de la ventana
 
 
 
