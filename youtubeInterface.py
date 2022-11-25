@@ -17,7 +17,7 @@ ventana.geometry("700x150")
 ventana.resizable(width=False,height=False)
 ventana.config(background="light blue")
 
-
+                                                                                                                                                                           
 datos_entrada=ttk.Entry(ventana)
 datos_entrada.place(x=265, y=50)
 
