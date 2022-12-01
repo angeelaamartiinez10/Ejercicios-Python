@@ -28,3 +28,5 @@ while (palabrasecreta==palabra):
     palabrasecreta=input("Dime una palabra ")
 else:
     print("contraseña correcta")
+
+print("Hola soy Nerea")
