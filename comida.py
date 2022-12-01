@@ -4,7 +4,8 @@ from tkinter import messagebox
 import tkinter as tk
 
 
-def guardarDatos()
+
+
 
 ventana=Tk()
 
@@ -21,7 +22,7 @@ combo = ttk.Combobox(ventana,
 combo.grid(row=1,column=1,pady=1)
 combo.set("Selecciona una opcion")
 
-boton_guardar=ttk.Button(ventana,text="Guardar", command=guardarDatos)
+#boton_guardar=ttk.Button(ventana,text="Guardar", command=guardarDatos)
 
 
 
