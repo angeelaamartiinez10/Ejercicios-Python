@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 from tkinter import messagebox
+import tkinter as tk  #para combobox
 
 usuario=""
 contraseña1=""
@@ -58,8 +59,17 @@ datos_usuario.grid(row=1,column=2,pady=8)
 datos_contraseña1.grid(row=2,column=2,pady=8)
 datos_contraseña2.grid(row=3,column=2,pady=8)
 
-boton_guardar.grid(row=20,column=1,pady=30)
-boton_salir.grid(row=20,column=2,pady=30)
+boton_guardar.grid(row=5,column=1,pady=30)
+boton_salir.grid(row=5,column=2,pady=30)
+
+
+'''COMBOBOX'''
+
+combo = ttk.Combobox(ventana,
+    state="readonly",
+    values=["Mujer", "Hombre"])
+combo.grid(row=4,column=2,pady=20)
+combo.set("Selecciona una opcion")
 
 
 
