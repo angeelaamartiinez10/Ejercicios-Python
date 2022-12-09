@@ -25,7 +25,6 @@ def main(page: ft.Page):
     dropdown_menu.options.append(ft.dropdown.Option("Mejor ni te lo digo"))
     page.update()
 
-    value=int
     slider_edad=ft.Slider (min=0, max=120, divisions=120, label="Edad:{value}")
     page.add(slider_edad)
 
