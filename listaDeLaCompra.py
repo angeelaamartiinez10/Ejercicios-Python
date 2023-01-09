@@ -1,11 +1,12 @@
 import flet as ft
 
 
+
 def main(page: ft.Page):
     page.title="***Lista de la compra***"
-   
+
     def boton_seleccionarC(e):
-        texto.value = (f"Carne seleccionada  {c1c.value}, {c2c.value}, {c3c.value}")
+        textoc.value = (f"Carne seleccionada  {c1c.value}, {c2c.value}, {c3c.value}")
         page.update()
 
     def seleccionar_Carne(e):
@@ -32,7 +33,7 @@ def main(page: ft.Page):
 
         
     def boton_seleccionarP(e):
-        t.value = (f"Pescado seleccionada  {c1.value}, {c2.value}, {c3.value}")
+        texto.value = (f"Pescado seleccionada  {c1.value}, {c2.value}, {c3.value}")
         page.update()
 
     def seleccionar_Pescado(e):
@@ -41,15 +42,13 @@ def main(page: ft.Page):
         else:
             page.remove(c1, c2, c3, b, texto)
 
-    
-
 
     def boton_seleccionarV(e):
-        t.value = (f"Verdura seleccionada  {c1v.value}, {c2v.value}, {c3v.value},")
+        textov.value = (f"Verdura seleccionada  {c1v.value}, {c2v.value}, {c3v.value},")
         page.update()
 
 
-    textoc = ft.Text(value="Selecciona")
+    textoc = ft.Text(value="Carnes seleccionadas")
     c1c = ft.Checkbox(label="Pollo", value=False)
     c2c= ft.Checkbox(label="Ternera", value=False)
     c3c = ft.Checkbox(label="Cerdo", value=False)
@@ -58,7 +57,7 @@ def main(page: ft.Page):
 
     
 
-    texto = ft.Text(value="Selecciona")
+    texto = ft.Text(value="Pescados seleccionados")
     c1 = ft.Checkbox(label="Sardinas", value=False)
     c2 = ft.Checkbox(label="Merluza", value=False)
     c3 = ft.Checkbox(label="Bacalao", value=False)
@@ -66,7 +65,7 @@ def main(page: ft.Page):
     #page.add(c1, c2, c3, b, texto)
 
 
-    textov = ft.Text(value="Selecciona")
+    textov = ft.Text(value="Verduras seleccionadas")
     c1v = ft.Checkbox(label="Tomates", value=False)
     c2v = ft.Checkbox(label="Lechuga", value=False)
     c3v = ft.Checkbox(label="Zanahorias", value=False)
@@ -92,10 +91,8 @@ def main(page: ft.Page):
     page.add(slider_coste)
 
     dropdown_menu=ft.Dropdown(width=200, options=[ft.dropdown.Option("Carne") ,ft.dropdown.Option("Pescado"),ft.dropdown.Option("Verduras")], on_change=seleccionar_Carne)
-  
-   
-
     page.add(dropdown_menu)
+    
     page.update()
 
 
