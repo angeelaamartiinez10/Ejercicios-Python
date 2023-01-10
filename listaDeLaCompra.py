@@ -6,7 +6,6 @@ def main(page: ft.Page):
 
     page.title="***Superamarket***"
 
-
     img = ft.Image(
         src=f"/imagenes/supermercado.png",
         width=170,
