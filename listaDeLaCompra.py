@@ -3,7 +3,16 @@ import flet as ft
 
 
 def main(page: ft.Page):
-    page.title="***Lista de la compra***"
+
+    page.title="***Superamarket***"
+
+
+    img = ft.Image(
+        src=f"/imagenes/supermercado.png",
+        width=170,
+        height=170,
+    )
+    page.add(img)
 
     def boton_seleccionarC(e):
         textoc.value = (f"Carne seleccionada  {c1c.value}, {c2c.value}, {c3c.value}")
@@ -98,4 +107,4 @@ def main(page: ft.Page):
 
 
 
-ft.app(target=main)
+ft.app(target=main, assets_dir="recursos")
