@@ -57,9 +57,9 @@ def main(page: ft.Page):
 
 
     textoc = ft.Text(value="Carnes seleccionadas")
-    c1c = ft.Checkbox(label="Pollo", value=False)
-    c2c= ft.Checkbox(label="Ternera", value=False)
-    c3c = ft.Checkbox(label="Cerdo", value=False)
+    c1c = ft.Checkbox(label="Pollo--> 4.49€/kg", value=False)
+    c2c= ft.Checkbox(label="Ternera--> 5.19€/kg", value=False)
+    c3c = ft.Checkbox(label="Cerdo--> 2.59€/kg", value=False)
     bc = ft.ElevatedButton(text="guardar", on_click=boton_seleccionarC)
     #page.add(c1c, c2c, c3c, bc, textoc)
 
